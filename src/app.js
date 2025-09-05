@@ -42,7 +42,7 @@ app.get('/health', (req, res) => res.json({ status: 'ok' }));
 app.use('/api/v1/tasks', taskRoutes);
 
 
-// 404 + errors
+
 app.use(notFound);
 app.use(errorHandler);
 
